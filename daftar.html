@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pendaftaran Pinjaman</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-reboot.min.css">
+</head>
+<body>
+	<!-- Navbar -->
+	<nav>
+		<label class="logo">
+			<img class="nav-logo" src="dist/css/image/MEGALOGO-01.png">
+		</label>
+		<ul>
+			<li>
+				<a href="index.html" style="color: #fff; text-decoration-line: none;">Beranda</a>
+			</li>
+			<li>
+				<a href="berita.html" style="color: #fff; text-decoration-line: none;">Berita</a>
+			</li>
+			<li>
+				<a href="persyaratan.html" style="color: #fff; text-decoration-line: none;">Persyaratan</a>
+			</li>
+			<li>
+				<a class="menu-active" href="daftar.html" style="color: #fff; text-decoration-line: none;">Daftar</a>
+			</li>
+			<li>
+				<a href="kontak.html" style="color: #fff; text-decoration-line: none;">Hubungi Kami</a>
+			</li>
+			<li>
+				<a href="#" style="color: #fff; text-decoration-line: none;">Login / Sign Up</a>
+			</li>
+		</ul>
+		<label id="icon">
+			<i class="fas fa-bars"></i>
+		</label>
+	</nav>
+	<!-- End Navbar -->
+
+	<!-- Content -->
+	<section class="container-daftar">
+		<div class="heading">
+			<h1 class="text-heading">Daftar Sekarang</h1>
+		</div>
+		<div class="row">
+			<div class="card-body">
+				<div class="daftar">
+					<form action="#" method="post">
+						<div class="form-group">
+							<label for="jenis-kelamin" class="text-daftar">Jumlah pinjaman</label>
+							<span class="warna-bintang">*</span>
+							<select class="custom-select">
+								<option selected>Pilih...</option>
+								<option value="NT 15,000">NT 15,000</option>
+								<option value="NT 25,000">NT 25,000</option>
+								<option value="NT 25,000">NT 25,000</option>
+								<option value="NT 45,000">NT 45,000</option>
+							</select>
+						</div>
+						<div>
+							<label>Informasi Peminjaman ( <span class="warna-bintang">*</span> = harus diisi)</label>
+						</div>
+						<div class="form-group">
+							<hr class="garis-atas">
+						</div>
+						<div class="form-group">
+							<label for="nomor-paspor" class="text-daftar">Nomor paspor</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="nomor_paspor" placeholder="Nomor paspor" required>
+						</div>
+						<div class="form-group">
+							<label for="jenis-kelamin" class="text-daftar">Jenis kelamin</label>
+							<span class="warna-bintang">*</span>
+							<select class="custom-select">
+								<option selected>Pilih...</option>
+								<option value="laki-laki">Laki-laki</option>
+								<option value="perempuan">Perempuan</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="hp-tw" class="text-daftar">Hp tw</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="hp_tw" placeholder="Hp tw" required>
+						</div>
+						<div class="form-group">
+							<label for="gaji" class="text-daftar">Gaji</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="gaji" placeholder="Gaji" required>
+						</div>
+						<div class="form-group">
+							<label for="tanggal-gajian" class="text-daftar">Tanggal Gajian</label>
+							<span class="warna-bintang">*</span>
+							<input type="date" class="form-control" id="tanggal_gajian" required>
+						</div>
+						<div class="form-group">
+							<label for="indoneisa-tlp" class="text-daftar">Indonesia Telp/Hp</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="indonesia_tlp" placeholder="Telp/Hp" required>
+						</div>
+						<div class="form-group">
+							<label for="alamat-indonesia" class="text-daftar">Alamat Indonesia</label>
+							<span class="warna-bintang">*</span>
+							<textarea class="form-control" id="alamat_indonesia" required></textarea>
+						</div>
+						<div class="form-group">
+							<input type="radio" name="alamat_tinggal" value="Milik Sendiri" required>
+							<label for="milik_sendiri" class="text-daftar">Milik Sendiri</label>
+							<span class="warna-bintang">*</span>
+						</div>
+						<div class="form-group">
+							<input type="radio" name="alamat_tinggal" value="Kontrak" required>
+							<label for="kontak" class="text-daftar">Kontrak</label>
+						</div>
+						<div class="form-group">
+							<label for="nama-keluarga" class="text-daftar">Nama keluarga di Indonesia</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="nama_keluarga" placeholder="Nama keluarga" required>
+						</div>
+						<div class="form-group">
+							<label for="telepon" class="text-daftar">Telepon</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="telepon" placeholder="Telepon" required>
+						</div>
+						<div class="form-group">
+							<label for="hubungan" class="text-daftar">Hubungan</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="hubungan" placeholder="Hubungan" required>
+						</div>
+						<div class="form-group">
+							<label for="alamat" class="text-daftar">Alamat</label>
+							<span class="warna-bintang">*</span>
+							<textarea class="form-control" id="alamat" required></textarea>
+						</div>
+						<div class="form-group">
+							<label for="nama-teman" class="text-daftar">Nama teman di indonesia</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="nama_teman" placeholder="Nama teman" required>
+						</div>
+						<div class="form-group">
+							<label for="telepon" class="text-daftar">Telepon</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="telepon" placeholder="Telepon" required>
+						</div>
+						<div class="form-group">
+							<label for="alamat" class="text-daftar">Alamat</label>
+							<span class="warna-bintang">*</span>
+							<textarea class="form-control" id="alamat" required></textarea>
+						</div>
+						<div class="form-group">
+							<label for="informasi" class="text-daftar">Darimana anda tahu pesan ini</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="informasi" placeholder="Pesan" required>
+						</div>
+						<div class="form-group">
+							<label for="sosmed" class="text-daftar">FB/Line</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="sosmed" placeholder="FB/Line" required>
+						</div>
+						<div class="form-group">
+							<label for="untuk" class="text-daftar">Untuk</label>
+							<span class="warna-bintang">*</span>
+							<select class="custom-select">
+								<option selected>Pilih...</option>
+								<option value="Berbelanja">Berbelanja</option>
+								<option value="Traveling">Traveling / Jalan-jalan</option>
+								<option value="Investasi">Investasi dan Manajemen Keuangan</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="file-nomor-paspor" class="text-daftar">Nomor paspor</label>
+							<input type="file" class="form-control" id="file_nomor_paspor">
+						</div>
+						<div class="form-group">
+							<label for="file-visa" class="text-daftar">VISA</label>
+							<input type="file" class="form-control" id="file_visa">
+						</div>
+						<div class="form-group">
+							<label for="file-arc" class="text-daftar">ARC (Depan)</label>
+							<input type="file" class="form-control" id="file_arc">
+						</div>
+						<div class="form-group">
+							<label for="file-slip-gaji" class="text-daftar">Slip Gaji</label>
+							<input type="file" class="form-control" id="file_slip_gaji">
+						</div>
+						<div class="form-group">
+							<label for="file-photo" class="text-daftar">Photo (Kepala besar)</label>
+							<input type="file" class="form-control" id="file_photo">
+						</div>
+						<div class="form-group">
+							<label for="file-kontrak-kerja" class="text-daftar">Kontrak Kerja</label>
+							<input type="file" class="form-control" id="file_kontrak_kerja">
+						</div>
+						<!-- batas -->
+						<div class="info-1">
+							<label>1. Informasi Penjamin</label>
+						</div>
+						<div class="form-group">
+							<hr class="garis-tengah">
+						</div>
+						<div class="form-group">
+							<label for="nomor-paspor1" class="text-daftar">Nomor paspor</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="nomor_paspor1" placeholder="Nomor paspor" required>
+						</div>
+						<div class="form-group">
+							<label for="jenis-kelamin1" class="text-daftar">Jenis kelamin</label>
+							<span class="warna-bintang">*</span>
+							<select class="custom-select">
+								<option selected>Pilih...</option>
+								<option value="laki-laki">Laki-laki</option>
+								<option value="perempuan">Perempuan</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="hp-tw1" class="text-daftar">Hp tw</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="hp_tw1" placeholder="Hp tw" required>
+						</div>
+						<div class="form-group">
+							<label for="file-nomor-paspor1" class="text-daftar">Nomor paspor</label>
+							<input type="file" class="form-control" id="file_nomor_paspor1">
+						</div>
+						<div class="form-group">
+							<label for="file-visa1" class="text-daftar">VISA</label>
+							<input type="file" class="form-control" id="file_visa1">
+						</div>
+						<div class="form-group">
+							<label for="file-arc1" class="text-daftar">ARC (Depan)</label>
+							<input type="file" class="form-control" id="file_arc1">
+						</div>
+						<div class="form-group">
+							<label for="file-kontrak-kerja1" class="text-daftar">Kontrak Kerja</label>
+							<input type="file" class="form-control" id="file_kontrak_kerja1">
+						</div>
+
+						<!-- batas -->
+						<div class="info-2">
+							<label>2. Informasi Penjamin</label>
+						</div>
+						<div class="form-group">
+							<hr class="garis-tengah">
+						</div>
+						<div class="form-group">
+							<label for="nomor-paspor2" class="text-daftar">Nomor paspor</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="nomor_paspor2" placeholder="Nomor paspor" required>
+						</div>
+						<div class="form-group">
+							<label for="jenis-kelamin2" class="text-daftar">Jenis kelamin</label>
+							<span class="warna-bintang">*</span>
+							<select class="custom-select">
+								<option selected>Pilih...</option>
+								<option value="laki-laki">Laki-laki</option>
+								<option value="perempuan">Perempuan</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="hp-tw2" class="text-daftar">Hp tw</label>
+							<span class="warna-bintang">*</span>
+							<input type="text" class="form-control" id="hp_tw2" placeholder="Hp tw" required>
+						</div>
+						<div class="form-group">
+							<label for="file-nomor-paspor2" class="text-daftar">Nomor paspor</label>
+							<input type="file" class="form-control" id="file_nomor_paspor2">
+						</div>
+						<div class="form-group">
+							<label for="file-visa2" class="text-daftar">VISA</label>
+							<input type="file" class="form-control" id="file_visa2">
+						</div>
+						<div class="form-group">
+							<label for="file-arc2" class="text-daftar">ARC (Depan)</label>
+							<input type="file" class="form-control" id="file_arc2">
+						</div>
+						<div class="form-group">
+							<label for="file-kontrak-kerja2" class="text-daftar">Kontrak Kerja</label>
+							<input type="file" class="form-control" id="file_kontrak_kerja2">
+						</div>
+
+						<!-- batas buttton -->
+						<div class="btn-costume">
+							<button type="submit" class="btn btn-success btn-block">Kirim</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- End Content -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="main-footer">
+			<div class="left box">
+				<h2>Tentang Kami</h2>
+				<hr class="garis">
+				<div class="content-footer">
+					<div class="palce">
+						<span class="fas fa-home"></span>
+						<span class="text">No.22, Guangfu Rd., Central Dist., Taichung City 400, Taiwan (R.O.C.)</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">04-2226-7088</span>
+					</div>
+					<div class="social-1">
+						<a class="social-link" href="#">
+							<span class="fab fa-line line"></span>
+						</a>
+						<span class="text">0905060528,</span>
+						<span class="text">0905060528,</span>
+						<span class="text">0905060528</span>
+					</div>
+					<div class="social-2">
+						<a class="social-link" href="#">
+							<span class="fab fa-facebook-f facebook"></span>
+						</a>
+						<span class="text">Mega Lending Indo 2</span>
+					</div>
+					<div class="jam-layanan">
+						<h4>Jam Kantor (Waktu Layanan Pelanggan)</h4>
+						<p class="hari-layanan">Senin - Jumat: 08:30 - 18:00</p>
+						<p class="hari-layanan">Sabtu - Minggu: 10:00 - 19:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Edit Formulir</h2>
+				<hr class="garis">
+				<div class="content-footer">
+					<form action="#" method="post">
+						<div class="formulir">
+							<div class="text">Nomor Formulir</div>
+							<input type="text" required>
+						</div>
+						<div class="paspor">
+							<div class="text">Nomor Paspor</div>
+							<input type="text" required>
+						</div>
+						<div class="btn">
+							<button type="submit">Kirim</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Cek Proses Peminjaman</h2>
+				<hr class="garis">
+				<div class="content-footer">
+					<form action="#" method="post">
+						<div class="formulir">
+							<div class="text">Nomor Formulir</div>
+							<input type="text" required>
+						</div>
+						<div class="paspor">
+							<div class="text">Nomor Paspor</div>
+							<input type="text" required>
+						</div>
+						<div class="btn">
+							<button type="submit">Kirim</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-cr">
+			<center>
+				<span class="credit">© 2021-Pendaftaran Peminjaman.</span>
+			</center>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#icon').click(function(){
+				$('ul').toggleClass('show');
+			});
+		});
+	</script>
+</body>
+</html>
